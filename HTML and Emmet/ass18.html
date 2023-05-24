@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmet Abbreviation</title>
+</head>
+<body>
+ <!-- div>ol>li*3{item$}  Here inside div order list with 3 items using '>' operator to nest elements inside each other.-->
+ <div>
+  <ol>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+  </ol>
+ </div>
+
+ <!-- table>(tr>th{header$}*2)+((tr>td{data$}*2))*2 -->
+ <!-- This is table with 3 rows(including header) and two coloums later added table border to it-->
+ <table border="2">
+  <tr>
+    <th>header1</th>
+    <th>header2</th>
+  </tr>
+  <tr>
+    <td>data1</td>
+    <td>data2</td>
+  </tr>
+  <tr>
+    <td>data1</td>
+    <td>data2</td>
+  </tr>
+ </table>
+
+ <!-- div.box+p{paragraph} -->
+ <!--div and p are sibilings(uses '+' operator) and div has a class 'box' -->
+ <div class="box"></div>
+ <p>paragraph and div are on same level</p>
+
+</body>
+</html>
